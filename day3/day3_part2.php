@@ -48,7 +48,7 @@ class Submarine
      *
      * @return int
      */
-    public function countColumnBits(array $values, int $column)
+    private function countColumnBits(array $values, int $column)
     {
         $positiveBitCount = 0;
         foreach ($values as $value) {
@@ -69,7 +69,7 @@ class Submarine
      *
      * @return void
      */
-    public function filterByBit(array $values, int $column, int $bit)
+    private function filterByBit(array $values, int $column, int $bit)
     {
         if (count($values) == 1) {
             return $values;
